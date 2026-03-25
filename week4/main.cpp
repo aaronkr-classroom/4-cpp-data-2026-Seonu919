@@ -35,7 +35,7 @@ int main() {
 	sort(students.begin(), students.end(), compare);
 
 	// 모든 학생의 결과를 출력
-	for (vector<Student_info>::size_type i = 0; i != students.size(); ++i) {
+	for (si_sz i = 0; i != students.size(); ++i) {
 		// 이름과 오른쪽 공백을 포함하여 maxlen + 1개의 문자를 출력
 		cout << students[i].name <<
 			string(maxlen + 1 - students[i].name.size(), ' ');
